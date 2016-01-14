@@ -1,0 +1,43 @@
+.panel-footer {
+  border-top: 4px solid #E8E5DC;
+}
+
+.breadcrumb, .page-header {
+  border: none;
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+.breadcrumb {
+  padding-left: 0;
+}
+
+.table-container {
+  border: 1px solid #dddddd;
+  border-radius: 4px 4px 0 0;
+}
+
+.table-bordered {
+  border: 0;
+}
+
+.button-container {
+  margin-top: 140px;
+  margin-bottom: 10px;
+}
+
+.float-left {
+  float: left;
+}
+
+.half-width {
+  display: inline-block;
+  min-width: 47%;
+}
+
+form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

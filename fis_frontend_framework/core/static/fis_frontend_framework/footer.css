@@ -1,0 +1,15 @@
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: 0 auto -44px;
+  padding-bottom: 20px;
+}
+
+footer, .page-wrapper:after {
+  height: 44px;
+}
+
+footer {
+  border-top: 4px solid #E8E5DC;
+  padding-top: 10px;
+  background-color: #F5F4F0;
+}

@@ -1,0 +1,49 @@
+{% load staticfiles %}
+
+{% block doctype %}
+<!DOCTYPE html>
+{% endblock doctype %}
+
+{% block html %}
+<html>
+  {% block head %}
+  <head>
+    {% block title %}
+    <title>FIS Prototype Site</title>
+    {% endblock title %}
+
+    {% for css_file in fis_framework.css_files %}
+    <link rel="stylesheet" href="{{ css_file }}" >
+    {% endfor %}
+
+    {% block css_files %}
+    {% endblock css_files %}
+
+    {% for js_file in fis_framework.js_files %}
+    <script type="text/javascript" src="{{ js_file }}"></script>
+    {% endfor %}
+
+    {% block js_files %}
+    {% endblock js_files %}
+  </head>
+  {% endblock head %}
+
+  {% block body %}
+  <body>
+    {% block body_content %}
+
+    {% include fis_framework.navbar_template %}
+
+    <div class="container page-wrapper">
+      {% block main_content %}
+      {% endblock main_content %}
+    </div>
+
+    {% include fis_framework.footer_template %}
+
+    {% endblock body_content %}
+  </body>
+  {% endblock body %}
+
+</html>
+{% endblock html %}

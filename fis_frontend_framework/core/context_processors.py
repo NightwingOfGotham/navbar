@@ -1,6 +1,5 @@
 from django.contrib.staticfiles.templatetags.staticfiles import static
 
-url = static('x.jpg')
 
 def fis_framework(request):
     framework_context_dict = {
@@ -16,8 +15,6 @@ def fis_framework(request):
             static('fis_frontend_framework/bootstrap.js'),
             static('fis_frontend_framework/main.js'),
         ),
-        'navbar_template': 'fis_frontend_framework/_navbar.html',
-        'footer_template': 'fis_frontend_framework/_footer.html',
     }
 
     return {

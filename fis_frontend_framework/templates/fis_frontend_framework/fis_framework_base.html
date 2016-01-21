@@ -32,14 +32,14 @@
   <body>
     {% block body_content %}
 
-    {% include fis_framework.navbar_template %}
+    {% include 'fis_frontend_framework/_navbar.html' %}
 
     <div class="container page-wrapper">
       {% block main_content %}
       {% endblock main_content %}
     </div>
 
-    {% include fis_framework.footer_template %}
+    {% include 'fis_frontend_framework/_footer.html' %}
 
     {% endblock body_content %}
   </body>
